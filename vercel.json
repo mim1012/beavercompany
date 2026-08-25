@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/blog",
+      "destination": "/api/index?route=blog"
+    },
+    {
+      "source": "/api/youtube",
+      "destination": "/api/index?route=youtube"
+    },
+    {
+      "source": "/api/trpc/:procedure*",
+      "destination": "/api/index?route=trpc&procedure=:procedure*"
+    }
+  ]
+}
