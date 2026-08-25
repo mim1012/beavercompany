@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/api/proxy-image",
+      "destination": "/api/index?route=proxy-image"
+    },
+    {
       "source": "/api/blog",
       "destination": "/api/index?route=blog"
     },
