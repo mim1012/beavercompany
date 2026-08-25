@@ -2,12 +2,9 @@
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /__manus/
 
-# Disallow admin or private pages (if any)
-# Disallow: /admin/
-
-# Sitemap location
+# Search-engine sitemap
 Sitemap: https://beavercompany.co.kr/sitemap.xml
-
-# Crawl-delay (optional, for rate limiting)
-Crawl-delay: 1
+Host: https://beavercompany.co.kr

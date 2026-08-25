@@ -1,0 +1,15 @@
+{
+  "name": "비버컴퍼니 전국 방문공연",
+  "short_name": "비버컴퍼니",
+  "description": "대구·전국 유치원·어린이집·초등학교 방문공연 전문",
+  "lang": "ko-KR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FEF9E7",
+  "theme_color": "#FEF9E7",
+  "icons": [
+    {"src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png"},
+    {"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+  ]
+}
