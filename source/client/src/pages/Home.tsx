@@ -132,7 +132,7 @@ export default function Home() {
     // Fetch YouTube Videos
     fetch('/api/youtube')
       .then(res => res.json())
-      .then(data => setYoutubeVideos(data))
+      .then(data => setYoutubeVideos(data.filter((video: any) => /솜사탕|마술|매직/i.test(video.title || ''))))
       .catch(err => console.error('Failed to fetch youtube videos:', err));
   }, []);
 
@@ -175,7 +175,7 @@ export default function Home() {
     {
       title: "샌드아트",
       description: "모래로 진행되는 예술의 향연\n※ 샌드아트 체험도 추가로 진행 하실수 있습니다 (추가적인 비용이 발생할 수 있습니다)",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030627935/mRbbbBMpRxsGarQCC5gK78/sand_art_89e477ee.png",
+      image: "/images/cotton_candy_real.png",
       tags: ["예술적", "체험형"],
       color: "bg-amber-100 text-amber-700",
     },
@@ -189,7 +189,7 @@ export default function Home() {
     {
       title: "학예회·예술제·패션쇼 MC",
       description: "학예회, 예술제, 패션쇼 등 다양한 행사의 사회 MC 진행을 전문적으로 맡아드립니다.",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663030627935/mRbbbBMpRxsGarQCC5gK78/mc_hosting_v2_c61c21ad.png",
+      image: "/images/magic_show_real.png",
       tags: ["사회MC", "행사진행"],
       color: "bg-rose-100 text-rose-700",
     },
