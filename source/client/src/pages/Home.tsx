@@ -19,6 +19,13 @@ import { motion } from "framer-motion";
 import { Calendar, CheckCircle2, ChevronRight, Mail, MapPin, MessageCircle, Phone, ShieldCheck, Star, Users } from "lucide-react";
 import { useState, useEffect } from "react";
 
+const featuredVideos = [
+  { id: 'WyIfrC4Oh8M', title: '아이들이 왜 이렇게 신났을까?', description: '비버컴퍼니 홍보영상' },
+  { id: 'BcLgIZyznj4', title: '대구 경북 흡연예방 인형극', description: '비버컴퍼니 홍보영상' },
+  { id: '-3QblCXnUUQ', title: '비버컴퍼니 코믹클래식 공연', description: '비버컴퍼니 홍보영상' },
+  { id: 'rkKUbkzNd2A', title: '운동회·야유회 공연 현장', description: '비버컴퍼니 홍보영상' },
+];
+
 export default function Home() {
   // The userAuth hooks provides authentication state
   // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
@@ -26,7 +33,6 @@ export default function Home() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [blogPosts, setBlogPosts] = useState<any[]>([]);
-  const [youtubeVideos, setYoutubeVideos] = useState<any[]>([]);
   // 유입 경로 수집 (최초 방문 시 저장)
   const [trafficSource] = useState(() => {
     // sessionStorage에서 이미 저장된 유입 경로 확인
@@ -129,11 +135,6 @@ export default function Home() {
       })
       .catch(err => console.error('Failed to fetch blog posts:', err));
 
-    // Fetch YouTube Videos
-    fetch('/api/youtube')
-      .then(res => res.json())
-      .then(data => setYoutubeVideos(data.filter((video: any) => /솜사탕|마술|매직/i.test(video.title || ''))))
-      .catch(err => console.error('Failed to fetch youtube videos:', err));
   }, []);
 
   const programs = [
@@ -377,7 +378,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {youtubeVideos.length > 0 ? youtubeVideos.slice(0, 6).map((video) => (
+              {featuredVideos.length > 0 ? featuredVideos.map((video) => (
                 <div className="group" key={video.id}>
                   <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:scale-[1.02]">
                     <div className="aspect-video relative overflow-hidden bg-gray-900">
