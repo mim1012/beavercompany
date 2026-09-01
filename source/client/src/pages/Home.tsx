@@ -21,9 +21,9 @@ import { useState, useEffect } from "react";
 
 const featuredVideos = [
   { id: 'WyIfrC4Oh8M', title: '비버솜사탕쇼', description: '비버컴퍼니에서만 만나보는 특별한공연, 스페셜 비버솜사탕쇼로 축제현장, 큰 공연에서 진행하는 특별한 대형 공연도 있습니다' },
-  { id: 'BcLgIZyznj4', title: '대구 경북 흡연예방 인형극', description: '비버컴퍼니 홍보영상' },
+  { id: 'BcLgIZyznj4', title: '전국 어디든 찾아가는 인형극', description: '오프닝 마술 OR 율동 + 복화술쇼 + 손인형극으로 진행되는 교육공연으로 너무나도 좋은 매직인형극' },
   { id: '-3QblCXnUUQ', title: '비버컴퍼니 코믹클래식 공연', description: '아이들의 눈높이에 맞춘 해설과 유머가 있는 코믹 클래식 공연입니다.' },
-  { id: 'rkKUbkzNd2A', title: '운동회·야유회 공연 현장', description: '비버컴퍼니 홍보영상' },
+  { id: 'rkKUbkzNd2A', title: '운동회 체육대회 진행 현장', description: '어린이집부터 유치원 초등학교, 중고등학교 성인 체육대회까지 저희 비버컴퍼니 선생님들이 보조하고 진행하고 있습니다' },
 ];
 
 export default function Home() {
