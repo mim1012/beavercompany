@@ -161,7 +161,7 @@ export default function Home() {
     },
     {
       title: "학예회·발표회",
-      description: "학예회, 발표회, 예술제 등 무대 행사를 위한 진행과 공연을 준비합니다.",
+      description: "음향부터 조명, 공연, 사회 등\n멋진 발표회를 도와드립니다.",
       image: "/images/school_presentation_email.png",
       tags: ["행사 진행", "무대 공연"],
       color: "bg-rose-100 text-rose-700",
@@ -181,11 +181,11 @@ export default function Home() {
       color: "bg-cyan-100 text-cyan-700",
     },
     {
-      title: "솜사탕쇼",
-      description: "비버선생님이 개발한 솜사탕으로 진행되는 퍼포먼스 콘서트 공연입니다.",
-      image: "/images/cotton_candy_popular.png",
-      tags: ["달콤함", "인기만점"],
-      color: "bg-pink-100 text-pink-700",
+      title: "레크리에이션·MC",
+      description: "행사 분위기를 살리는 전문 MC와 함께 레크리에이션, 게임, 율동을 진행합니다.",
+      image: "/images/recreation_mc_popular.webp",
+      tags: ["전문 MC", "레크리에이션"],
+      color: "bg-orange-100 text-orange-700",
     },
     {
       title: "페이스페인팅",
