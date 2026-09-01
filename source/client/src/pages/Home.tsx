@@ -407,7 +407,7 @@ export default function Home() {
                   viewport={{ once: true }}
                 >
                   <Card className="h-full border-none shadow-soft hover:shadow-xl transition-all duration-300 overflow-hidden group bg-white rounded-3xl">
-                    <div className="relative h-64 overflow-hidden bg-stone-100">
+                    <div className="relative aspect-square overflow-hidden bg-stone-100">
                       <img 
                         src={program.image} 
                         alt={program.title}
