@@ -166,6 +166,34 @@ export default function Home() {
       tags: ["행사 진행", "무대 공연"],
       color: "bg-rose-100 text-rose-700",
     },
+    {
+      title: "샌드아트",
+      description: "빛과 모래로 이야기를 만들어가는 감성적인 샌드아트 공연입니다.",
+      image: "/images/sand_art_popular.png",
+      tags: ["감성 공연", "예술 체험"],
+      color: "bg-amber-100 text-amber-700",
+    },
+    {
+      title: "버블쇼·벌룬쇼",
+      description: "눈앞에서 펼쳐지는 비눗방울과 풍선 퍼포먼스로 아이들의 시선을 사로잡는 공연입니다.",
+      image: "/images/bubble_balloon_popular.png",
+      tags: ["버블쇼", "벌룬쇼"],
+      color: "bg-cyan-100 text-cyan-700",
+    },
+    {
+      title: "솜사탕쇼",
+      description: "비버선생님이 개발한 솜사탕으로 진행되는 퍼포먼스 콘서트 공연입니다.",
+      image: "/images/cotton_candy_popular.png",
+      tags: ["달콤함", "인기만점"],
+      color: "bg-pink-100 text-pink-700",
+    },
+    {
+      title: "페이스페인팅",
+      description: "아이들이 원하는 그림을 얼굴에 그려주는 페이스페인팅 체험입니다.",
+      image: "/images/face_painting_popular.png",
+      tags: ["체험 행사", "포토타임"],
+      color: "bg-violet-100 text-violet-700",
+    },
   ];
 
   const reviews = [
