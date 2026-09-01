@@ -20,9 +20,9 @@ import { Calendar, CheckCircle2, ChevronRight, Mail, MapPin, MessageCircle, Phon
 import { useState, useEffect } from "react";
 
 const featuredVideos = [
-  { id: 'WyIfrC4Oh8M', title: '비버솜사탕쇼', description: '비버컴퍼니의 대표 솜사탕 공연입니다.' },
-  { id: 'BcLgIZyznj4', title: '스페셜 비버솜사탕쇼', description: '비버컴퍼니에서만 만나보는 특별한 공연, 스페셜 비버솜사탕쇼로 축제 현장, 큰 공연에서 진행하는 특별한 대형 공연도 있습니다.' },
-  { id: '-3QblCXnUUQ', title: '비버컴퍼니 코믹클래식 공연', description: '비버컴퍼니 홍보영상' },
+  { id: 'WyIfrC4Oh8M', title: '비버솜사탕쇼', description: '비버컴퍼니에서만 만나보는 특별한공연' },
+  { id: 'BcLgIZyznj4', title: '대구 경북 흡연예방 인형극', description: '비버컴퍼니 홍보영상' },
+  { id: '-3QblCXnUUQ', title: '+스페셜 비버솜사탕쇼로', description: '축제현장, 큰 공연에서 진행하는 특별한 대형 공연도 있습니다' },
   { id: 'rkKUbkzNd2A', title: '운동회·야유회 공연 현장', description: '비버컴퍼니 홍보영상' },
 ];
 
