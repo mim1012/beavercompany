@@ -141,28 +141,28 @@ export default function Home() {
     {
       title: "솜사탕쇼",
       description: "비버선생님이 개발한 솜사탕으로 진행되는 퍼포먼스 콘서트 공연입니다.",
-      image: "/images/cotton_candy_real.png",
+      image: "/images/cotton_candy_email.png",
       tags: ["달콤함", "인기만점"],
       color: "bg-pink-100 text-pink-700",
     },
     {
       title: "코믹클래식",
       description: "아이들의 눈높이에 맞춘 해설과 유머가 있는 코믹 클래식 공연입니다.",
-      image: "/images/comic_classic_show.jpg",
+      image: "/images/comic_classic_email.png",
       tags: ["클래식", "교육적"],
       color: "bg-purple-100 text-purple-700",
     },
     {
       title: "운동회",
       description: "실내·야외 모두 가능한 신나는 운동회와 야유회 프로그램입니다.",
-      image: "/images/sports_day.png",
+      image: "/images/sports_day_email.png",
       tags: ["실내 가능", "야외 가능"],
       color: "bg-green-100 text-green-700",
     },
     {
       title: "학예회·발표회",
       description: "학예회, 발표회, 예술제 등 무대 행사를 위한 진행과 공연을 준비합니다.",
-      image: "/images/trust_reason_photo.png",
+      image: "/images/sand_art_email.png",
       tags: ["행사 진행", "무대 공연"],
       color: "bg-rose-100 text-rose-700",
     },
@@ -508,7 +508,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="absolute -inset-4 bg-stone-100 rounded-[2rem] -z-10"></div>
                   <img 
-                    src="/images/trust_reason_photo.png" 
+                    src="/images/trust_reason_photo.png"
                     alt="2025 한국어 말하기 대회 공연 현장" 
                     className="rounded-[1.5rem] shadow-xl w-full object-cover aspect-[4/3]"
                   />
