@@ -162,7 +162,7 @@ export default function Home() {
     {
       title: "학예회·발표회",
       description: "학예회, 발표회, 예술제 등 무대 행사를 위한 진행과 공연을 준비합니다.",
-      image: "/images/sand_art_email.png",
+      image: "/images/school_presentation_email.png",
       tags: ["행사 진행", "무대 공연"],
       color: "bg-rose-100 text-rose-700",
     },
