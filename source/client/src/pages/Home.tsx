@@ -140,58 +140,30 @@ export default function Home() {
   const programs = [
     {
       title: "솜사탕쇼",
-      description: "비버선생님이 개발한 솜사탕으로 진행되는 퍼포먼스 콘서트 공연 (다양한 교육주제로 진행중)",
+      description: "비버선생님이 개발한 솜사탕으로 진행되는 퍼포먼스 콘서트 공연입니다.",
       image: "/images/cotton_candy_real.png",
       tags: ["달콤함", "인기만점"],
       color: "bg-pink-100 text-pink-700",
     },
     {
-      title: "인형극",
-      description: "귀여운 동물 친구들이 들려주는 재미있는 이야기와 교훈",
-      image: "/images/puppet_show_real.png",
-      tags: ["인기", "교육적"],
-      color: "bg-orange-100 text-orange-700",
-    },
-    {
-      title: "운동회",
-      description: "신나는 음악과 함께하는 재미있는 체육 활동",
-      image: "/images/sports_day.png",
-      tags: ["활기찬", "체육"],
-      color: "bg-green-100 text-green-700",
-    },
-    {
-      title: "마술쇼",
-      description: "눈앞에서 펼쳐지는 신기하고 환상적인 마술의 세계",
-      image: "/images/magic_show_real.png",
-      tags: ["베스트", "참여형"],
-      color: "bg-blue-100 text-blue-700",
-    },
-    {
-      title: "버블쇼",
-      description: "무지개빛 비눗방울과 함께하는 꿈같은 시간",
-      image: "/images/bubble_show_real.png",
-      tags: ["화려함", "포토타임"],
-      color: "bg-sky-100 text-sky-700",
-    },
-    {
-      title: "샌드아트",
-      description: "모래로 진행되는 예술의 향연\n※ 샌드아트 체험도 추가로 진행 하실수 있습니다 (추가적인 비용이 발생할 수 있습니다)",
-      image: "/images/cotton_candy_real.png",
-      tags: ["예술적", "체험형"],
-      color: "bg-amber-100 text-amber-700",
-    },
-    {
-      title: "스토리텔링 클래식공연",
-      description: "교육주제를 해설하면서 진행되는 클래식공연. 예산에 따라 솔로나 듀엣으로 진행됩니다.",
-      image: "/manus-storage/classic_performance_new_ba588cd0.png",
+      title: "코믹클래식",
+      description: "아이들의 눈높이에 맞춘 해설과 유머가 있는 코믹 클래식 공연입니다.",
+      image: "/images/comic_classic_show.jpg",
       tags: ["클래식", "교육적"],
       color: "bg-purple-100 text-purple-700",
     },
     {
-      title: "학예회·예술제·패션쇼 MC",
-      description: "학예회, 예술제, 패션쇼 등 다양한 행사의 사회 MC 진행을 전문적으로 맡아드립니다.",
-      image: "/images/magic_show_real.png",
-      tags: ["사회MC", "행사진행"],
+      title: "운동회",
+      description: "실내·야외 모두 가능한 신나는 운동회와 야유회 프로그램입니다.",
+      image: "/images/sports_day.png",
+      tags: ["실내 가능", "야외 가능"],
+      color: "bg-green-100 text-green-700",
+    },
+    {
+      title: "학예회·발표회",
+      description: "학예회, 발표회, 예술제 등 무대 행사를 위한 진행과 공연을 준비합니다.",
+      image: "/images/trust_reason_photo.png",
+      tags: ["행사 진행", "무대 공연"],
       color: "bg-rose-100 text-rose-700",
     },
   ];
@@ -425,7 +397,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {programs.map((program, index) => (
                 <motion.div
                   key={index}
