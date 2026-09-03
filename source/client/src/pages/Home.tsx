@@ -174,8 +174,8 @@ export default function Home() {
       color: "bg-amber-100 text-amber-700",
     },
     {
-      title: "버블쇼·벌룬쇼",
-      description: "눈앞에서 펼쳐지는 비눗방울과 풍선 퍼포먼스로 아이들의 시선을 사로잡는 공연입니다.",
+      title: "마술쇼·버블쇼·벌룬쇼",
+      description: "마술쇼와 비눗방울, 풍선 퍼포먼스로 아이들의 시선을 사로잡는 공연입니다.",
       image: "/images/bubble_balloon_popular.png",
       tags: ["버블쇼", "벌룬쇼"],
       color: "bg-cyan-100 text-cyan-700",
