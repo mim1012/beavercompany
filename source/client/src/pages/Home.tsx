@@ -182,7 +182,7 @@ export default function Home() {
     },
     {
       title: "레크리에이션·MC",
-      description: "행사 분위기를 살리는 전문 MC와 함께 레크리에이션, 게임, 율동을 진행합니다.",
+      description: "행사 분위기를 살리는 전문 MC와 함께 레크리에이션, 게임, 율동을 진행합니다.\n2025마늘축제 사회자",
       image: "/images/recreation_mc_popular.webp",
       tags: ["전문 MC", "레크리에이션"],
       color: "bg-orange-100 text-orange-700",
