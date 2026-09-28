@@ -19,10 +19,10 @@ import { motion } from "framer-motion";
 import { Calendar, CheckCircle2, ChevronRight, Mail, MapPin, MessageCircle, Phone, ShieldCheck, Star, Users } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const featuredVideos = [
+const featuredVideos: { id: string; src?: string; title: string; description: string }[] = [
   { id: 'WyIfrC4Oh8M', title: '비버솜사탕쇼', description: '비버컴퍼니에서만 만나보는 특별한공연, 스페셜 비버솜사탕쇼로 축제현장, 큰 공연에서 진행하는 특별한 대형 공연도 있습니다' },
   { id: 'BcLgIZyznj4', title: '전국 어디든 찾아가는 인형극', description: '오프닝 마술 OR 율동 + 복화술쇼 + 손인형극으로 진행되는 교육공연으로 너무나도 좋은 매직인형극' },
-  { id: '-3QblCXnUUQ', title: '비버컴퍼니 코믹클래식 공연', description: '아이들의 눈높이에 맞춘 해설과 유머가 있는 코믹 클래식 공연입니다.' },
+  { id: 'comic-classic', src: '/videos/comic-classic.mp4', title: '비버컴퍼니 코믹클래식 공연', description: '아이들의 눈높이에 맞춘 해설과 유머가 있는 코믹 클래식 공연입니다.' },
   { id: 'rkKUbkzNd2A', title: '운동회 체육대회 진행 현장', description: '어린이집부터 유치원 초등학교, 중고등학교 성인 체육대회까지 저희 비버컴퍼니 선생님들이 보조하고 진행하고 있습니다' },
 ];
 
@@ -382,7 +382,19 @@ export default function Home() {
                 <div className="group" key={video.id}>
                   <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:scale-[1.02]">
                     <div className="aspect-video relative overflow-hidden bg-gray-900">
+                      {video.src ? (
+                        <video
+                          id={`vid-${video.id}`}
+                          className="absolute inset-0 w-full h-full object-contain bg-black"
+                          src={video.src}
+                          title={video.title}
+                          controls
+                          playsInline
+                          preload="metadata"
+                        />
+                      ) : (
                       <iframe
+                        id={`vid-${video.id}`}
                         className="absolute inset-0 w-full h-full"
                         src={`https://www.youtube.com/embed/${video.id}`}
                         title={video.title}
@@ -391,8 +403,24 @@ export default function Home() {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                       />
+                      )}
                     </div>
                     <div className="p-6">
+                      {/* 어르신도 쉽게 크게 볼 수 있도록 큰 전체화면 버튼 (iPhone은 video 네이티브 전체화면, YouTube는 앱/새 탭으로) */}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const v = document.getElementById(`vid-${video.id}`) as any;
+                          if (!v) return;
+                          const f = v.requestFullscreen || v.webkitRequestFullscreen;
+                          if (f) { f.call(v)?.catch?.(() => {}); return; }
+                          if (v.webkitEnterFullscreen) { v.webkitEnterFullscreen(); return; }
+                          if (!video.src) window.open(`https://www.youtube.com/watch?v=${video.id}`, '_blank', 'noopener');
+                        }}
+                        className="w-full mb-4 flex items-center justify-center gap-2 rounded-xl bg-amber-500 hover:bg-amber-700 text-white text-xl font-bold py-4 shadow-md"
+                      >
+                        ⛶ 전체화면으로 크게 보기
+                      </button>
                       <h3 className="text-lg font-bold text-stone-900 mb-2 group-hover:text-primary transition-colors line-clamp-2">
                         {video.title}
                       </h3>
