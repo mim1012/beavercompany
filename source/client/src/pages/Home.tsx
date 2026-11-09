@@ -139,7 +139,7 @@ export default function Home() {
 
   const programs = [
     {
-      title: "솜사탕쇼",
+      title: "비버솜사탕쇼",
       description: "비버선생님이 개발한 솜사탕으로 진행되는 퍼포먼스 콘서트 공연입니다.",
       image: "/images/cotton_candy_email.png",
       tags: ["달콤함", "인기만점"],
@@ -200,7 +200,7 @@ export default function Home() {
     {
       name: "김하은 어머님",
       role: "학부모",
-      content: "아이 생일에 솜사탕쇼를 불렀는데 정말 최고였어요! 아이들이 너무 좋아해서 뿌듯했습니다.",
+      content: "아이 생일에 비버솜사탕쇼를 불렀는데 정말 최고였어요! 아이들이 너무 좋아해서 뿌듯했습니다.",
       rating: 5,
     },
     {
@@ -913,7 +913,7 @@ export default function Home() {
                         <option>인형극</option>
                         <option>마술쇼</option>
                         <option>버블쇼</option>
-                        <option>솜사탕쇼</option>
+                        <option>비버솜사탕쇼</option>
                         <option>코믹클래식</option>
                       </select>
                     </div>
@@ -1051,7 +1051,7 @@ export default function Home() {
                 <li><a href="#" className="hover:text-primary transition-colors">찾아가는 인형극</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">신기한 마술쇼</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">버블쇼 & 풍선아트</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">캐릭터 솜사탕쇼</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">캐릭터 비버솜사탕쇼</a></li>
               </ul>
             </div>
 
