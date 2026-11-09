@@ -914,6 +914,7 @@ export default function Home() {
                         <option>마술쇼</option>
                         <option>버블쇼</option>
                         <option>솜사탕쇼</option>
+                        <option>코믹클래식</option>
                       </select>
                     </div>
                     <div className="space-y-2">
